@@ -1,0 +1,134 @@
+<!--
+    Title: tran_calorie.html
+    Author: Phuong Tran
+    Date: 11/13/2023
+    Description: Assignment 4.2 - Calorie App     
+    Source: https://developer.mozilla.org/en-US/docs/Web/API/Element/keyup_event
+            https://stackoverflow.com/questions/6844952/execute-function-when-enter-is-pressed-if-textbox-has-focus
+            https://tutorial.eyehunts.com/js/call-javascript-function-on-enter-keypress-in-the-textbox-example-code/
+            https://github.com/buwebdev/web-231/blob/master/week-6/composer-app/composer.js
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="tran_calorie.css">
+    <link rel="stylesheet" href="/site.css">
+    <link rel="stylesheet" href="/theme.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>WEB 330 - Enterprise JavaScript II</title>
+</head>
+<body class="light-theme">
+    
+    <!-- Light and dark mode -->
+    <i onclick="toggleMode(this)" id="icon-mode" class="fa fa-toggle-off pull-right"
+         style="font-size: 28px;"><span id="icon-text"></span></i>
+         <br>
+
+    <!-- App -->
+    <div id="container">
+        <div class="app-header">Welcome to the Calorie App!</div>
+        <div class="card">
+           <div class="card-title">Calorie Search Form</div>
+              <div class="form">
+                 <div class="form-field">
+                    <label>Enter a food item:</label>
+                    <input type="text" id="txtFoodItem" class="input">
+                    <span id = "foodList"></span>             
+                 </div>
+                 <div>
+                    <button id="btnSearch" class="btn btn-primary" onclick="">Search</button>
+                 </div>
+           </div>
+        </div>
+
+        <!-- Link to return back to the index.html page. -->
+            <div class="return-home"><a  href="tran_calorie.html">Return</a> </div> 
+        
+        <!--Card to display results-->
+        <div id="results-container">
+           <div class="card">
+              <div class="card-title">Search Results</div>
+              <div  id="results">
+            <!-- table -->
+            <table>
+                 <thead>
+                    <th>Name</th>
+                    <th>Calories</th>
+                 </thead>
+                 <tbody id="myTable">
+                 </tbody>
+            </table>
+                 <!--End of myTable-->
+              </div>
+              <br>
+           </div>
+        </div>
+    </div>
+    <!-- Link to "theme.js" for dark theme -->
+    <script src="theme.js"></script>
+
+<!-- script file-->
+<script type="module">
+    // Import CalorieConverter
+    import { CalorieConverter } from "./calorie-converter.js"
+
+    // Crete a variable to get to HTML tag
+    const txtFoodItemEl = document.getElementById('txtFoodItem')
+
+    // button onclick function 
+    document.getElementById("btnSearch").onclick = () => {
+        // Create  variables to get the value from users 
+        let txtFoodItem = txtFoodItemEl.value
+        let foods = CalorieConverter.find(txtFoodItem.toLowerCase())
+        let tableData = ""
+
+        // Iterate over the foods variable and populate the HTML table
+        for (let food of foods) {
+            // Create a variable tblRow with string to represent an HTML
+            let tblRow = `
+                    <tr>
+                        <td> ${food.name} </td>
+                        <td> ${food.calories} </td>
+                    </tr>`
+            tableData += tblRow
+        }
+        tableData += "</tbody></table>"
+
+        document.getElementById("myTable").innerHTML = tableData
+    }
+        
+    // keyup function when users press enter keyboard
+    document.addEventListener("keyup", function(event) {
+            // Trigger the keyup function when users press enter
+            if ( event.keyCode == 13 || event.key === 'Enter') {
+                 document.getElementById('btnSearch').click()
+             }
+  
+    }) 
+
+    // Create a variable foodList
+    let foodList = CalorieConverter.data;
+
+    // Build an HTML <i> string 
+    let foodListData = "<i>(Ex: "
+
+    for (const food of foodList) {
+        // Append food names to variable string
+        foodListData += `${food.name}, `
+     }
+
+        foodListData = `${foodListData})</i>`
+
+        document.getElementById("foodList").innerHTML = foodListData
+
+</script>
+</body>
+</html>
