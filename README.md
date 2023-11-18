@@ -1,5 +1,5 @@
 # web-330
-Enterprise JavaScript II
-*Contributers
-**Richard Kreasso
-**Phuong Tran
+#Enterprise JavaScript II
+##Contributors
+*Richard Kreasso
+*Phuong Tran
