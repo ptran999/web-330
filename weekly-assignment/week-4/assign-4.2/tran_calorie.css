@@ -1,0 +1,61 @@
+/*
+    Title: tran_calorie.css
+    Author: Phuong Tran
+    Date: 11/13/2023
+    Description: Assignment 4.2 - Calorie App- CSS styling 
+*/
+
+/* styling the FoodList to match with assignment requirement */
+#foodList {
+    float: left;
+    color: #df546a;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* displaying the container into middle of the page */
+.container {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+/* styling the app header */
+.app-header {
+    width: 100%;
+}
+
+/* styling the card */
+.card {
+    width: 600px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* styling the card title */
+.card-title {
+    font-size: 28px;
+}
+
+/* styling the form */
+form {
+    margin-left: 15%;
+    margin-right: 15%; 
+}
+
+/* styling the search button */
+#btnSearch {
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    width: 52%;
+    align-items: center;
+}
+
+.return-home {
+    padding-left: 35%;
+    padding-right: 30%;
+}
+

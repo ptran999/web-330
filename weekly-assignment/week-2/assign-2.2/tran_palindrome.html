@@ -1,0 +1,51 @@
+<!-- 
+    Title: tran_palindrome.html
+    Author: Phuong Tran
+    Date: 10-29-2023
+    Description: An app that checks if a string is palindrome or not
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2 – Palindrome App</title>
+
+    <!-- Link style sheets -->
+    <link rel="stylesheet" href="tran_palindrome.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="container">
+    <h1 class="app-header">Welcome to the Palindrome App!</h1>
+
+        <div class="card">
+            <div class="card-title">Palindrome Checker</div>
+            <div class="card-content">
+                <div class="form">
+                    <div class="form-field">
+                        <label for="txtPhrase">Phrase value:</label>
+                        <input type="text" id="txtPhrase">
+                    </div>
+                    <button class="btn" id="btnCheckPhrase" >Check Phrase</button>
+                
+                </div>
+            </div>
+        </div>
+        <a href="tran_palindrome.html" class="return-home">Return</a>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title">Palindrome Results</div>
+                    <div id="assign-results-header"></div>
+                    <div id="assign-results" class="assign-results-text"></div>
+                </div>
+        </div>
+    </div>
+   
+<script src="tran_palindrome.js" ></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/*
+    Title: tran-restaurant.css
+    Author: Phuong Tran
+    Date: 11/05/2023
+    Description: Assignment 3.2 - Restaurant App, CSS styling
+*/
+body {
+  margin: 0;
+  font-family: 'Oswald', Verdana, Arial, sans-serif;
+  font-size: 28px;
+}
+
+.container {
+  margin-top: 3%;
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+.app-header {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Styling the card */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.card-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 90%;
+  margin: 10px;
+  padding-bottom: 6px;
+}
+
+.card-title, h3{
+  text-align: center;
+  font-size: 28px;
+  color: #4F3674;
+  font-weight: 400;
+  padding-top: 15px;
+}
+
+/* display grid with two columns */
+.card-content {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+  font-size: 18px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* styling the button */
+.btn {
+  width: 100%;
+  padding: 12px 40px;
+  margin-top: 12px;
+  background-color: #4F3674;
+  color: #fff;
+  border: 1px solid #4F3674;
+  font-size: 18px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #4F3674 ;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* remove the underline of the link */
+a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* styling the result */
+.results {
+  text-align: center;
+  color: #4F3674;
+}
+
