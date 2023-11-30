@@ -1,0 +1,27 @@
+/* 
+    Title: site.css
+    Author: Phuong Tran
+    Date: 11/23/2023
+    Description: Standard CSS styling to be used for Future Value app.
+*/
+
+.danger {
+    float: right;
+    color: #df546a;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.form-label {
+    display: inline-block;
+    padding-top: 1rem;
+}
+
+#card-info {
+    width: 600px;
+    margin: 3% auto 0;
+}
+
+.right {
+    text-align: right;
+}
