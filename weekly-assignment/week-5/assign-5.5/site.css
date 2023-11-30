@@ -1,0 +1,80 @@
+/* Setting the body font. */
+body {
+	font-family: Oswald, sans-serif;
+}
+
+.container {
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+/* When a user hovers over a link, it will change to the color specified below. */
+a:hover {
+	background-color: #D6A800;
+	color: #4F3674;
+}
+
+/* Changing the cursor to a point on hover. */
+#icon-mode:hover {
+	cursor: pointer;
+}
+
+/* Adding padding for the icon text. */
+#icon-text {
+	padding-left: 10px;
+}
+
+.pull-right {
+	float: right;
+}
+
+.assign-container {
+	padding: 10px;
+}
+
+.assign-content {
+	width: 600px;
+	margin: 3% auto 0;
+}
+
+.assign-results-text {
+	text-align: center;
+	font-size: 28px;
+}
+
+/* Styling for app header. */
+.app-header {
+    font-size: 28px;
+    text-align: center;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.form {
+	display: inline-grid;
+	grid-template-columns: auto;
+}
+
+.form-field {
+	padding: 20px;
+}
+
+/* Styling for the return home link */
+.return-home {
+	color: #4f3674;
+	text-decoration: none;
+	margin-left: 460px;
+
+}
+
+.return-home:hover {
+	color: #4f3674;
+	background-color: #d6a800;
+}
+
+.return-home:visited {
+	color: #3c275a;
+}
