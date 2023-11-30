@@ -1,5 +1,4 @@
-# web-330
-#Enterprise JavaScript II
+# web-330 - 323M Enterprise JavaScript II
 ##Contributors
-*Richard Kreasso
-*Phuong Tran
+* Richard Kreasso
+* Phuong Tran
