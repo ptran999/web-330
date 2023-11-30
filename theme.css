@@ -1,3 +1,9 @@
+/* 
+    Title: theme.css
+    Author: Phuong Tran
+    Description: Standard CSS styling to be used for assignments.
+*/
+
 /* Styling for light theme */
 body.light-theme {
 	--text-color: #000;
