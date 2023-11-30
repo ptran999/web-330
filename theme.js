@@ -1,3 +1,13 @@
+ /*
+    Title: theme.html
+    Author: Richard Krasso
+    Date: 3/22/2021
+    Description: Sets the default color scheme for the page. If an
+                event is triggered on the icon element, the local
+                storage is cleared and modified to reflect the choice
+                for future use. 
+ */
+
 setDefaultTheme();
 
 function setDefaultTheme() {
