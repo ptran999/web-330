@@ -1,0 +1,73 @@
+/* 
+    Title: site.css
+    Author: Phuong Tran
+    Date: 11/23/2023
+    Description: Standard CSS styling to be used for Future Value app.
+*/
+
+.app-header {
+    text-align: center;
+    font-weight: 400;
+}
+
+/* styling for return home link */
+.return-home {
+    color: #4F3674;
+    text-decoration: none;
+}
+
+.return-home:hover {
+    background-color: #D6A800;
+    color: #4F3674;
+}
+
+.return-home:visited {
+    color: #3C275A;
+}
+
+/* styling for form */
+.form {
+    display: inline-grid;
+    grid-template-columns: auto;
+}
+
+.form-field {
+    padding: 20px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#icon-mode:hover {
+    cursor: pointer;
+}
+
+#icon-text {
+    padding-left: 10px;
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+
+.pull-right {
+    float: right;
+}
+
+.assign-container {
+    padding: 10px;
+}
+
+.assign-content {
+    width: 600px;
+    margin: 3% auto 0;
+}
+
+.assign-results-text {
+    text-align: center;
+    font-size: 28px;
+}
